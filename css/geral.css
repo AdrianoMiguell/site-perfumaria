@@ -5,6 +5,7 @@
 @import "./navbar.css";
 @import "./classes.css";
 @import "./banner.css";
+@import "./card.css";
 
 *{
     margin: 0;

@@ -1,0 +1,32 @@
+.section-cards {
+  margin: 4em 0;
+  display: grid;
+  gap: 2em;
+}
+.section-cards h2 {
+  text-align: center;
+}
+.div-cards {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardsRect {
+  display: flex;
+  width: var(--width-card);
+  height: var(--height-card);
+  transition-duration: 0.2s;
+}
+.cardsRect .card-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.section-cards .cardsRect {
+  box-shadow: 0 0 1px rgba(var(--quat-c), 0.4);
+}
+.section-cards .cardsRect:hover {
+  transform: scale(1.01);
+}
