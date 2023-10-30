@@ -1,35 +1,29 @@
-.banner {
-  position: relative;
-  transition-duration: 0.75s;
-}
-.banner-full-scene {
-  min-height: 90vh;
+.div-parallax {
   width: 100vw;
-  background-size: cover;
-  background-position: center;
 }
-.banner-content {
+.parallax {
+  position: relative;
+}
+.parallax-content {
   position: absolute;
-  bottom: 25px;
+  top: 50%;
+  bottom: 50%;
   left: 10px;
   right: 10px;
   padding: 0.45em 2em;
   text-align: center;
 }
-.banner-title {
+.parallax-title {
   font-size: 50pt;
   font-weight: 750;
   font-family: "The Nautigal", cursive;
+  text-shadow: 1px 1px rgba(var(--light-c), .75);
 }
-.banner-text {
+.parallax-text {
   font-size: 15pt;
   font-weight: 500;
   font-family: "Inter Tight", cursive;
-}
-
-.banner:hover {
-  translate: 0 -1px;
-  box-shadow: 4px 4px 4px rgba(var(--quat-c), 0.75);
+  text-shadow: .5px .5px rgba(var(--light-c), .75);
 }
 
 /* font-family: 'Dancing Script', cursive;

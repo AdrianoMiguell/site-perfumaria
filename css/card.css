@@ -9,8 +9,9 @@
 .div-cards {
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .cardsRect {
   display: flex;

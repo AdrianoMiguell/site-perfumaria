@@ -1,0 +1,11 @@
+.hanging-frame {
+  margin: auto;
+  width: 92vw;
+  min-height: 25em;
+  background-color: rgb(var(--white-c));
+  box-shadow: 0 5px 15px rgba(var(--dark-c), 0.2),
+    0 5px 15px rgba(var(--dark-c), 0.1) inset;
+  padding: 5rem;
+  translate: 0 -5vh;
+  border-radius: 5px;
+}

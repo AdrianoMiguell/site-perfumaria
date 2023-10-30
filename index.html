@@ -18,6 +18,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- simple parallax -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
     <link rel="stylesheet" href="./css/geral.css" />
   </head>
   <body>
@@ -92,24 +95,70 @@
         </div>
       </nav>
 
-      <div
-        class="banner banner-full-scene"
-        style="
-          background-image: url('./img/frasco-de-perfume-em-vidro-transparente-com-papel-branco.jpg');
-        "
-      >
-        <blockquote class="banner-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
-          minus impedit? Itaque perspiciatis repellat earum sequi.
+      <div class="div-parallax">
+        <img
+          src="./img/frasco-de-perfume-em-vidro-transparente-com-papel-branco.jpg"
+          alt=""
+          class="parallax parallax-header w-100 h-auto"
+        />
+        <blockquote class="parallax-content">
+          <h3 class="parallax-title">Sinta o aroma</h3>
+          <p class="parallax-text">
+            Conheça as melhores fragrâncias do mundo! Sinta o sabor de ser
+            cheiroso
+          </p>
         </blockquote>
       </div>
     </header>
 
-    <main>
-      <section class="section-cards">
+    <section class="hanging-frame">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nisi qui impedit minima mollitia exercitationem. Exercitationem reiciendis adipisci, harum eaque minus tempora aut, sit perspiciatis nemo, in voluptate cumque illum?
+      </p>
+      <section class="section-cards section-cards-landscape">
         <h2>Fragrance of life</h2>
 
-        <div class="div-cards">
+        <div class="div-cards flex-nowrap" style="width: 100%">
+          <div
+            class="cardsRect"
+            style="--width-card: 25%; --height-card: 200px"
+          >
+            <div
+              class="card-img"
+              style="
+                background-image: url('./img/foto-de-perfume-unico-e-amarelo.jpg');
+              "
+            ></div>
+          </div>
+          <div
+            class="cardsRect"
+            style="--width-card: 50%; --height-card: 350px"
+          >
+            <div
+              class="card-img"
+              style="
+                background-image: url('./img/artigos-de-vidro-objetos-de-vidro-luxo-espelho.jpg');
+              "
+            ></div>
+          </div>
+          <div
+            class="cardsRect"
+            style="--width-card: 25%; --height-card: 200px"
+          >
+            <div
+              class="card-img"
+              style="background-image: url('./img/frascos-perfume.jpg')"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <main>
+      <section class="section-cards section-cards-landscape">
+        <h2>Fragrance of life</h2>
+
+        <div class="div-cards flex-nowrap">
           <div
             class="cardsRect"
             style="--width-card: 30vw; --height-card: 250px"
@@ -144,8 +193,122 @@
         </div>
       </section>
 
-      <section>
-        <div>
+      <style>
+        .section-cards-products .card {
+          height: 350px;
+        }
+        .div-cards .card {
+          width: 200px;
+          position: relative;
+        }
+        .card-border {
+          border: 1px solid rgb(var(--quat-c));
+        }
+        .card-img {
+          height: 150px;
+          overflow: hidden;
+        }
+        .card-img img {
+          width: 100%;
+          height: auto;
+          translate: 0 var(--ty-img);
+        }
+        .card-body .card-title {
+          color: rgb(var(--quin-c));
+        }
+        .card-body .card-text {
+          color: rgb(var(--dark-c));
+        }
+      </style>
+      <section class="section-cards section-cards-products">
+        <h2>Our Products</h2>
+        <div class="div-cards flex-wrap p-5 gap-2 justify-content-around">
+          <div class="card card-border mb-3">
+            <div class="card-img">
+              <img
+                src="./img/perfumes_images/arranjo-organizacao-combinacao-disposicao.jpg"
+                class="card-img-top"
+                style="--ty-img: -25px"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Oleo essencial de Copaiba</h5>
+              <p class="card-text">
+                Um Oléo essencial de multiplos beneficios.
+              </p>
+              <div class="card-price">
+                <span class="price"> R$ 25,00 </span>
+                <span class="promotion"></span>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-success">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-border mb-3">
+            <div class="card-img">
+              <img
+                src="./img/perfumes_images/cosméticos-maquiagem-escovas.jpg"
+                class="card-img-top"
+                style="--ty-img: 0"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title">KIT de maquiagem</h5>
+              <p class="card-text">Um Kit de maquiagem multi-funções</p>
+              <div class="card-price">
+                <span class="price"> R$ 25,00 </span>
+                <span class="promotion"></span>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-success">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-border mb-3">
+            <div class="card-img">
+              <img
+                src="./img/perfumes_images/cosméticos-maquiagem-escovas.jpg"
+                class="card-img-top"
+                style="--ty-img: 0"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title">KIT de maquiagem</h5>
+              <p class="card-text">Um Kit de maquiagem multi-funções</p>
+              <div class="card-price">
+                <span class="price"> R$ 25,00 </span>
+                <span class="promotion"></span>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-success">Buy</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card-border mb-3">
+            <div class="card-img">
+              <img
+                src="./img/perfumes_images/cosméticos-maquiagem-escovas.jpg"
+                class="card-img-top"
+                style="--ty-img: 0"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-success">
+              <h5 class="card-title">KIT de maquiagem</h5>
+              <p class="card-text">Um Kit de maquiagem multi-funções</p>
+              <div class="card-price">
+                <span class="price"> R$ 25,00 </span>
+                <span class="promotion"></span>
+              </div>
+              <div class="card-button">
+                <button class="btn btn-success">Buy</button>
+              </div>
+            </div>
+          </div>
           <div>
             <h3>Perfum</h3>
             <p>Lorem ipsum dolor sit</p>
@@ -213,6 +376,12 @@
 
       <div>termos</div>
     </footer>
+
+    <script>
+      const parallax_header = document.querySelector(".parallax-header");
+
+      new simpleParallax(parallax_header);
+    </script>
 
     <script src="./js/geral.js"></script>
   </body>
