@@ -1,0 +1,14 @@
+.block {
+  visibility: hidden;
+  opacity: 0;
+  animation: vanish 0.25s linear;
+}
+
+@keyframes vanish {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,56 @@
+.navbar {
+  background-color: rgba(var(--quat-c), 0.25);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: .75em 2em;
+}
+.navbar-brand {
+  color: rgb(var(--tert-c));
+  font-weight: 600;
+  font-size: 40pt;
+  font-family: 'The Nautigal', cursive;
+}
+.navbar-nav {
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75em;
+}
+.navbar-nav *:not(.dropdown-menu *) {
+  color: rgb(var(--main-c)) !important;
+  text-shadow: 0.25px 0.25px rgb(var(--tert-c));
+}
+.navbar-nav *:hover,
+.navbar-nav *:active,
+.navbar-nav *:focus {
+  color: rgb(var(--sec-c)) !important;
+}
+.dropdown-menu {
+  position: absolute !important;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-toggler:not(hover) {
+  box-shadow: none !important;
+  border: none !important;
+  color: rgb(var(--main-c));
+  transition: 0.25s;
+}
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  color: rgb(var(--sec-c));
+  transition: 0.25s;
+}
+.navbar-toggler i {
+  position: absolute;
+  transition: 0.25s;
+}
+.activedCollapse {
+  color: rgb(var(--sec-c));
+  transition: 0.25s;
+}
