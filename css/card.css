@@ -31,3 +31,29 @@
 .section-cards .cardsRect:hover {
   transform: scale(1.01);
 }
+
+.section-cards-products .card {
+  height: 350px;
+}
+.div-cards .card {
+  width: 200px;
+  position: relative;
+}
+.card-border {
+  border: 1px solid rgb(var(--quat-c));
+}
+.card-img {
+  height: 150px;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: auto;
+  translate: 0 var(--ty-img);
+}
+.card-body .card-title {
+  color: rgb(var(--quin-c));
+}
+.card-body .card-text {
+  color: rgb(var(--dark-c));
+}

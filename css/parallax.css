@@ -1,5 +1,6 @@
 .div-parallax {
   width: 100vw;
+  position: relative;
 }
 .parallax {
   position: relative;
@@ -12,6 +13,7 @@
   right: 10px;
   padding: 0.45em 2em;
   text-align: center;
+  
 }
 .parallax-title {
   font-size: 50pt;

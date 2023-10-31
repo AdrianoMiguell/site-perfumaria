@@ -8,6 +8,7 @@
 @import "./banner.css";
 @import "./card.css";
 @import "./parallax.css";
+@import "./effect.css";
 
 * {
   margin: 0;

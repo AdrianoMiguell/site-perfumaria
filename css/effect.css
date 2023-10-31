@@ -1,0 +1,28 @@
+.smoke_effect {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 255, 255, 0.25); */
+  z-index: 999;
+  position: absolute;
+  overflow: hidden;
+}
+.smoke_effect img {
+  width: auto;
+  height: 100%;
+  animation: translateX 60s ease-in-out infinite;
+  /* background-image: url("https://demos.creative-tim.com/paper-kit-react/static/media/clouds.3c700c13.png"); */
+}
+
+@keyframes translateX {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
